@@ -18,12 +18,14 @@ public class TItleManagerScript : MonoBehaviour
     }
 
     //Exitボタンが押されたとき
-    public void OnClickStart(){
+    public void OnClickStart()
+    {
         SceneManager.LoadScene("GameScene");
     }
 
     //Exitボタンが押されたとき
-    public void OnClickExit(){
+    public void OnClickExit()
+    {
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
 #else

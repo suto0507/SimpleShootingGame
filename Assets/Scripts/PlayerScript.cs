@@ -2,18 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerScript : MonoBehaviour
+public class PlayerScript : FighterScript
 {
-
-    public GameObject ShotPrefab;
-
-    public float speed = 10f;
-    Rigidbody myRigidbody;
 
     // Start is called before the first frame update
     void Start()
     {
-        myRigidbody = GetComponent<Rigidbody>();
+        base.Start();
     }
 
     // Update is called once per frame
@@ -21,24 +16,13 @@ public class PlayerScript : MonoBehaviour
     {
         myRigidbody.velocity = new Vector3(Input.GetAxis("Horizontal") * speed, 0f, 0f);
 
-        //進行方向と同じ向きにする
-        Vector2 lscale = gameObject.transform.localScale;
-        if ((lscale.x > 0 &&  myRigidbody.velocity.x < 0)
-            || (lscale.x < 0 &&  myRigidbody.velocity.x > 0))
-        {
-            lscale.x *= -1;
-            gameObject.transform.localScale = lscale;
-        }
+        base.Update();
 
         //弾の発射
-        if (Input.GetKeyDown(KeyCode.Space)) {
+        if (Input.GetKeyDown(KeyCode.Space)) 
+        {
             Vector3 pos = gameObject.transform.position;
-            Instantiate(ShotPrefab, pos, Quaternion.identity);
+            Instantiate(shotPrefab, pos, Quaternion.identity);
         }
-    }
-
-    //ダメージを受けると消滅する
-    public void Damaged(){
-        Destroy(gameObject);
     }
 }

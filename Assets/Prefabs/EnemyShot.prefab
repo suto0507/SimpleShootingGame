@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7919628517987711463}
   - component: {fileID: 7919628517987711462}
   - component: {fileID: 7919628517987711458}
-  - component: {fileID: -7414675925073337280}
+  - component: {fileID: -8147258048244798982}
   m_Layer: 0
   m_Name: EnemyShot
   m_TagString: Untagged
@@ -113,7 +113,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 122
   m_CollisionDetection: 0
---- !u!114 &-7414675925073337280
+--- !u!114 &-8147258048244798982
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -122,7 +122,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 7919628517987711461}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bfaad6d616fc84a459cf0f2cd2c6ec9c, type: 3}
+  m_Script: {fileID: 11500000, guid: f0b5c82267844f34fa4e74d96358570e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  opponentTag: Player
   speed: -10
