@@ -126,4 +126,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   opponentTag: Enemy
+  alliesTag: Player
   speed: 10

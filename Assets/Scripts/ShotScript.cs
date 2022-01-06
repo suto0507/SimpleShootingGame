@@ -5,6 +5,7 @@ using UnityEngine;
 public class ShotScript : MonoBehaviour
 {
     public string opponentTag;
+    public string alliesTag;
     public float speed;
     Rigidbody myRigidbody;
 
@@ -30,7 +31,7 @@ public class ShotScript : MonoBehaviour
             FighterScript fs = collision.gameObject.GetComponent<FighterScript>();
             fs.Damaged();
         }
-        if(collision.gameObject.CompareTag("Wall"))
+        if(!collision.gameObject.CompareTag(alliesTag))
         {
             Destroy(gameObject);
         }
