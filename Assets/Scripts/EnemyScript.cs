@@ -26,7 +26,7 @@ public class EnemyScript : FighterScript
     void OnCollisionEnter(Collision collision)
     {  
         Debug.Log(collision.gameObject.tag);
-        if(collision.gameObject.CompareTag("wall"))
+        if(collision.gameObject.CompareTag("Wall"))
         {
             direction = direction * -1.0f;
         }

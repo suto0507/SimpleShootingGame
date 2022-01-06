@@ -30,7 +30,7 @@ public class ShotScript : MonoBehaviour
             FighterScript fs = collision.gameObject.GetComponent<FighterScript>();
             fs.Damaged();
         }
-        if(collision.gameObject.CompareTag("wall"))
+        if(collision.gameObject.CompareTag("Wall"))
         {
             Destroy(gameObject);
         }

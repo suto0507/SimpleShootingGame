@@ -1130,7 +1130,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5ab55c01eda7c5478082a19f5f08b33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ShotPrefab: {fileID: 3831841618101918359, guid: d9b1a9cbbf67b844c802b11673fd7661, type: 3}
+  shotPrefab: {fileID: 3831841618101918359, guid: d9b1a9cbbf67b844c802b11673fd7661, type: 3}
   speed: 10
 --- !u!65 &1766078984
 BoxCollider:

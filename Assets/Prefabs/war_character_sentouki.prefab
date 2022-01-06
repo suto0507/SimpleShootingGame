@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61038ff3dc60aa44ea97abb0fddb392f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ShotPrefab: {fileID: 7919628517987711461, guid: 2353c519bd080334cb82f3d2b0a2df46, type: 3}
+  shotPrefab: {fileID: 7919628517987711461, guid: 2353c519bd080334cb82f3d2b0a2df46, type: 3}
   speed: 10
 --- !u!54 &-5408968763525953194
 Rigidbody:
